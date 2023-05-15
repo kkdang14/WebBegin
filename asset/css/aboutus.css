@@ -1,0 +1,141 @@
+/* 
+Người viết: 
+    1.Phạm Trí Đạt-B2103421
+    2.Lâm Hoàng Em-B2003890
+Tham khảo: Youtube, w3school.com  */
+
+html{
+    scroll-behavior: smooth;
+}
+
+.main .container{
+    height: 1300px;
+    width: 100%;
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.main .container .info-shop{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 1300px;
+    background: rgb(250, 224, 189);
+    padding: 20px;
+}
+
+
+.main .container .info-shop p{
+    width: 90%;
+}
+
+.main .container .info-shop .co-founder{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    height: 500px;
+    width: 100%;
+}
+
+.main .container .info-shop .co-founder h1{
+    text-align: center;
+}
+
+.container .info-shop .co-founder .co-founder__info{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.container .info-shop .co-founder .co-founder__info .image{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: silver;
+    padding: 10px;
+    border: 8px solid antiquewhite;
+}
+
+.container .info-shop .co-founder .co-founder__info .image img{
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.container .info-shop .co-founder .co-founder__info .content{
+    padding: 20px 10px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.container .info-shop .co-founder .co-founder__info .content .paragraph{
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (max-width: 1200px){
+    .container{
+        width: 100%;
+    }
+
+    .container .info-shop p{
+        width: 100%;
+    }
+}
+
+/* Default styles */
+
+/* Your existing CSS code */
+
+/* Responsive styles */
+
+/* For screens smaller than 1200px */
+@media (max-width: 1200px) {
+    .main .container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 80px;
+        height: auto;
+    }
+
+    .main .container .info-shop {
+        height: auto;
+        width: 90%;
+    }
+
+    .main .container .info-shop .co-founder {
+        height: auto;
+    }
+
+    .main .container .info-shop .co-founder .co-founder__info {
+        flex-direction: column;
+    }
+
+    .main .container .info-shop .co-founder .co-founder__info .image {
+        margin: 0 auto 20px;
+    }
+
+    .container .info-shop .co-founder .co-founder__info .content {
+        width: 100%;
+    }
+
+    .container .info-shop .co-founder .co-founder__info .content .paragraph {
+        height: auto;
+        
+    }
+}
+
+/* Add more media queries as needed for different screen sizes */

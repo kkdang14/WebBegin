@@ -1,0 +1,695 @@
+<!-- 
+Người viết: 
+    1.Kim Khánh Đăng-B2113306
+    2.Phạm Trí Đạt-B2103421
+    3.Lâm Hoàng Em-B2003890
+Tham khảo: Youtube, w3school.com 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Cửa hàng</title>
+    <link rel="icon" href="./asset/img/favicon.png">
+    <link rel="stylesheet" href="./asset/css/reset.css">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/cuahang.css">
+    <link rel="stylesheet" href="./asset/css/header-footer.css">
+    <!-- <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/all.min.css"> -->
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <!-- <i class="fa-duotone fa-house-tree"></i> -->
+                    <a href="./trangchu.html"><img src="./asset/img/logo.png" alt=""></a>
+                </div>
+                <div class="header-bars">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="header-nav">
+                    <div class="header-nav__list">
+                        <a href="./trangchu.html" class="header-nav__list-item">Home</a>
+                        <a href="./cuahang.html" class="header-nav__list-item">Store</a>
+                        <a href="./aboutus.html" class="header-nav__list-item">About Us</a>
+                        <a href="" class="header-nav__list-item">Contact</a>
+                        <a href="./login.html" class="header-nav__list-item"><button type="submit" formtarget="_blank" class="btn-login">Login|Register</button></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="store-tool">
+                <div class="store-tool__content">
+                    <div class="icon-contact">
+                        <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a target="_blank" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Searching in here...">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="cart-icon">
+                        <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <div class="count-item" id="count-item">(<span>0</span>)</div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-main">
+                <div class="banner-main__content">
+                    <img src="./asset/img/Banner-store-2.png" alt="">
+                </div>
+            </div>
+            <div class="product-area">
+                <!-- Các loại sản phẩm trong cửa hàng -->
+                <div class="kind-products">
+                    <div class="typename-products">
+                        <a href="#the-type-product-1">
+                            <div class="typename-products__child">
+                                <img src="./asset/img/kindofproduct-1.jpg" alt="">
+                                <div class="overlay">
+                                    <div class="content">
+                                        <h4>For The Wedding</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#the-type-product-2">
+                            <div class="typename-products__child">
+                                <img src="./asset/img/kindofproduct-2.jpg" alt="">
+                                <div class="overlay">
+                                    <div class="content">
+                                        <h4>For Couples</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#the-type-product-3">
+                            <div class="typename-products__child">
+                                <img src="./asset/img/kindofproduct-3.jpg" alt="">
+                                <div class="overlay">
+                                    <div class="content">
+                                        <h4>For Birthday</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#the-type-product-4">
+                            <div class="typename-products__child">
+                                <img src="./asset/img/kindofproduct-4.jpg" alt="">
+                                <div class="overlay">
+                                    <div class="content">
+                                        <h4>For Decoration</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="products-shelves">
+                    <div id="the-type-product-1" class="the-type-product">
+                        <div class="products">
+                            <div class="the-type-product__name">
+                                <h4>Flower For The Wedding</h4>
+                            </div>
+                            <!-- Sản phẩm cho tiệc cưới-begin -->
+                            <div class="product-box">
+                                <div><img src="./asset/img/item-wedding-1.jpg" alt=""></div>
+                                <span class="product-box__name" id="product-box__name">Flower Wedding 1</span>
+                                <span id="product-box__price">Price: 400$</span>
+                                <div class="overlay-item">
+                                    <div class="btn-addtocart" id="btn-addtocart">
+                                        <button class="add-cart cart1">Add to cart</button>
+                                    </div>
+                                    <div class="detail" id="detail">
+                                        <a href="./product-1.html"><button>More detail</button></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-box">
+                                <a href="./product-1.1.html"><div><img src="./asset/img/item-wedding-2.jpg" alt=""></div></a>
+                                <span class="product-box__name" id="product-box__name">Flower Wedding 2</span>
+                                <span id="product-box__price">Price: 600$</span>
+                                <div class="overlay-item">
+                                    <div class="btn-addtocart">
+                                        <button class="add-cart cart2">Add to cart</button>
+                                    </div>
+                                    <div class="detail">
+                                        <a href="./product-1.1.html"><button>More detail</button></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-box">
+                                <a href="./product-1.2.html"><div><img src="./asset/img/item-wedding-3.jpg" alt=""></div></a>
+                                <span class="product-box__name" id="product-box__name">Flower Wedding 3</span>
+                                <span id="product-box__price">Price: 750$</span>
+                                <div class="overlay-item">
+                                    <div class="btn-addtocart">
+                                        <button class="add-cart cart3">Add to cart</button>
+                                    </div>
+                                    <div class="detail">
+                                        <a href="./product-1.2.html"><button>More detail</button></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-box">
+                                <a href="./product-1.3.html"><div><img src="./asset/img/item-wedding-4.jpg" alt=""></div></a>
+                                <span class="product-box__name" id="product-box__name">Flower Wedding 4</span>
+                                <span id="product-box__price">Price: 350$</span>
+                                <div class="overlay-item">
+                                    <div class="btn-addtocart">
+                                        <button class="add-cart cart4">Add to cart</button>
+                                    </div>
+                                    <div class="detail">
+                                        <a href="./product-1.3.html"><button>More detail</button></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-box">
+                                <a href="./product-1.4.html"><div><img src="./asset/img/item-wedding-5.jpg" alt=""></div></a>
+                                <span class="product-box__name" id="product-box__name">Flower Wedding 5</span>
+                                <span id="product-box__price">Price: 500$</span>
+                                <div class="overlay-item">
+                                    <div class="btn-addtocart">
+                                        <button class="add-cart cart5">Add to cart</button>
+                                    </div>
+                                    <div class="detail">
+                                        <a href="./product-1.4.html"><button>More detail</button></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-box">
+                                <a href="./product-1.5.html"><div><img src="./asset/img/item-wedding-6.jpg" alt=""></div></a>
+                                <span class="product-box__name" id="product-box__name">Flower Wedding 6</span>
+                                <span id="product-box__price">Price: 650$</span>
+                                <div class="overlay-item">
+                                    <div class="btn-addtocart">
+                                        <button class="add-cart cart6">Add to cart</button>
+                                    </div>
+                                    <div class="detail">
+                                        <a href="./product-1.5.html"><button>More detail</button></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-box">
+                                <a href="./product-1.6.html"><div><img src="./asset/img/item-wedding-7.jpg" alt=""></div></a>
+                                <span class="product-box__name" id="product-box__name">Flower Wedding 7</span>
+                                <span id="product-box__price">Price: 810$</span>
+                                <div class="overlay-item">
+                                    <div class="btn-addtocart">
+                                        <button class="add-cart cart7">Add to cart</button>
+                                    </div>
+                                    <div class="detail">
+                                        <a href="./product-1.6.html"><button>More detail</button></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-box">
+                                <a href="./product-1.7.html"><div><img src="./asset/img/item-wedding-8.jpg" alt=""></div></a>
+                                <span class="product-box__name" id="product-box__name">Flower Wedding 8</span>
+                                <span id="product-box__price">Price: 400$</span>
+                                <div class="overlay-item">
+                                    <div class="btn-addtocart">
+                                        <button class="add-cart cart8">Add to cart</button>
+                                    </div>
+                                    <div class="detail">
+                                        <a href="./product-1.7.html"><button>More detail</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Sản phẩm cho tiệc cưới-end -->
+                        </div>
+                    </div>
+
+                    <div id="the-type-product-2" class="the-type-product">
+                        <div class="products">
+                            <div class="the-type-product__name">
+                                <h4>Flower For Couples</h4>
+                            </div>
+                            <div class="product-box">
+                                <a href="./product-2.html"> <div><img src="./asset/img/item-1.jpg" alt=""></div></a>
+                                <span class="product-box__name" id="product-box__name">Flower 1</span>
+                                <span id="product-box__price">Price: 400$</span>
+                                <div class="overlay-item">
+                                    <div class="btn-addtocart">
+                                        <button class="add-cart cart9">Add to cart</button>
+                                    </div>
+                                    <div class="detail">
+                                        <a href="./product-2.html"><button>More detail</button></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-box">
+                                <a href="./product-2.1.html"> <div><img src="./asset/img/item-2.jpg" alt=""></div></a>
+                                <span class="product-box__name" id="product-box__name">Flower 2</span>
+                                <span id="product-box__price">Price: 600$</span>
+                                <div class="overlay-item">
+                                    <div class="btn-addtocart">
+                                        <button class="add-cart cart10">Add to cart</button>
+                                    </div>
+                                    <div class="detail">
+                                        <a href="./product-2.1.html"><button>More detail</button></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-box">
+                                <a href="./product-2.2.html"> <div><img src="./asset/img/item-3.jpg" alt=""></div></a>
+                                <span class="product-box__name" id="product-box__name">Flower 3</span>
+                                <span id="product-box__price">Price: 750$</span>
+                                <div class="overlay-item">
+                                    <div class="btn-addtocart">
+                                        <button class="add-cart cart11">Add to cart</button>
+                                    </div>
+                                    <div class="detail">
+                                        <a href="./product-2.2.html"><button>More detail</button></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-box">
+                                <a href="./product-2.3.html"> <div><img src="./asset/img/item-4.jpg" alt=""></div></a>
+                                <span class="product-box__name" id="product-box__name">Flower 4</span>
+                                <span id="product-box__price">Price: 350$</span>
+                                <div class="overlay-item">
+                                    <div class="btn-addtocart">
+                                        <button class="add-cart cart12">Add to cart</button>
+                                    </div>
+                                    <div class="detail">
+                                        <a href="./product-2.3.html"><button>More detail</button></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-box">
+                                <a href="./product-2.4.html"> <div><img src="./asset/img/item-5.jpg" alt=""></div></a>
+                                <span class="product-box__name" id="product-box__name">Flower 5</span>
+                                <span id="product-box__price">Price: 500$</span>
+                                <div class="overlay-item">
+                                    <div class="btn-addtocart">
+                                        <button class="add-cart cart13">Add to cart</button>
+                                    </div>
+                                    <div class="detail">
+                                        <a href="./product-2.4.html"><button>More detail</button></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-box">
+                                <a href="./product-2.5.html"> <div><img src="./asset/img/item-6.jpg" alt=""></div></a>
+                                <span class="product-box__name" id="product-box__name">Flower 6</span>
+                                <span id="product-box__price">Price: 650$</span>
+                                <div class="overlay-item">
+                                    <div class="btn-addtocart">
+                                        <button class="add-cart cart14">Add to cart</button>
+                                    </div>
+                                    <div class="detail">
+                                        <a href="./product-2.5.html"><button>More detail</button></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-box">
+                                <a href="./product-2.6.html"> <div><img src="./asset/img/item-7.jpg" alt=""></div></a>
+                                <span class="product-box__name" id="product-box__name">Flower 7</span>
+                                <span id="product-box__price">Price: 810$</span>
+                                <div class="overlay-item">
+                                    <div class="btn-addtocart">
+                                        <button class="add-cart cart15">Add to cart</button>
+                                    </div>
+                                    <div class="detail">
+                                        <a href="./product-2.6.html"><button>More detail</button></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-box">
+                                <a href="./product-2.7.html"> <div><img src="./asset/img/item-8.jpg" alt=""></div></a>
+                                <span class="product-box__name" id="product-box__name">Flower 8</span>
+                                <span id="product-box__price">Price: 400$</span>
+                                <div class="overlay-item">
+                                    <div class="btn-addtocart">
+                                        <button class="add-cart cart16">Add to cart</button>
+                                    </div>
+                                    <div class="detail">
+                                        <a href="./product-2.7.html"><button>More detail</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="the-type-product-3" class="the-type-product">
+                        <div class="products">
+                            <div class="the-type-product__name">
+                                <h4>Flower For Birthday</h4>
+                            </div>
+                            <div class="product-box">
+                                <a href="./product-3.html"> <div><img src="./asset/img/item-birthday-1.jpg" alt=""></div></a>
+                                <span class="product-box__name" id="product-box__name">Flower 1</span>
+                                <span id="product-box__price">Price: 400$</span>
+                                <div class="overlay-item">
+                                    <div class="btn-addtocart">
+                                        <button class="add-cart cart17">Add to cart</button>
+                                    </div>
+                                    <div class="detail">
+                                        <a href="./product-3.html"><button>More detail</button></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-box">
+                                <a href="./product-3.1.html"> <div><img src="./asset/img/item-birthday-2.jpg" alt=""></div></a>
+                                <span class="product-box__name" id="product-box__name">Flower 2</span>
+                                <span id="product-box__price">Price: 600$</span>
+                                <div class="overlay-item">
+                                    <div class="btn-addtocart">
+                                        <button class="add-cart cart18">Add to cart</button>
+                                    </div>
+                                    <div class="detail">
+                                        <a href="./product-3.1.html"><button>More detail</button></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-box">
+                                <a href="./product-3.2.html"> <div><img src="./asset/img/item-birthday-3.jpg" alt=""></div></a>
+                                <span class="product-box__name" id="product-box__name">Flower 3</span>
+                                <span id="product-box__price">Price: 750$</span>
+                                <div class="overlay-item">
+                                    <div class="btn-addtocart">
+                                        <button class="add-cart cart19">Add to cart</button>
+                                    </div>
+                                    <div class="detail">
+                                        <a href="./product-3.2.html"><button>More detail</button></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-box">
+                                <a href="./product-3.3.html"> <div><img src="./asset/img/item-birthday-4.jpg" alt=""></div></a>
+                                <span class="product-box__name" id="product-box__name">Flower 4</span>
+                                <span id="product-box__price">Price: 350$</span>
+                                <div class="overlay-item">
+                                    <div class="btn-addtocart">
+                                        <button class="add-cart cart20">Add to cart</button>
+                                    </div>
+                                    <div class="detail">
+                                        <a href="./product-3.3.html"><button>More detail</button></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-box">
+                                <a href="./product-3.4.html"> <div><img src="./asset/img/item-birthday-5.jpg" alt=""></div></a>
+                                <span class="product-box__name" id="product-box__name">Flower 5</span>
+                                <span id="product-box__price">Price: 500$</span>
+                                <div class="overlay-item">
+                                    <div class="btn-addtocart">
+                                        <button class="add-cart cart21">Add to cart</button>
+                                    </div>
+                                    <div class="detail">
+                                        <a href="./product-3.4.html"><button>More detail</button></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-box">
+                                <a href="./product-3.5.html"> <div><img src="./asset/img/item-birthday-6.jpg" alt=""></div></a>
+                                <span class="product-box__name" id="product-box__name">Flower 6</span>
+                                <span id="product-box__price">Price: 650$</span>
+                                <div class="overlay-item">
+                                    <div class="btn-addtocart">
+                                        <button class="add-cart cart22">Add to cart</button>
+                                    </div>
+                                    <div class="detail">
+                                        <a href="./product-3.5.html"><button>More detail</button></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-box">
+                                <a href="./product-3.6.html"> <div><img src="./asset/img/item-birthday-7.jpg" alt=""></div></a>
+                                <span class="product-box__name" id="product-box__name">Flower 7</span>
+                                <span id="product-box__price">Price: 810$</span>
+                                <div class="overlay-item">
+                                    <div class="btn-addtocart">
+                                        <button class="add-cart cart23">Add to cart</button>
+                                    </div>
+                                    <div class="detail">
+                                        <a href="./product-3.6.html"><button>More detail</button></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-box">
+                                <a href="./product-3.7.html"> <div><img src="./asset/img/item-birthday-8.jpg" alt=""></div></a>
+                                <span class="product-box__name" id="product-box__name">Flower 8</span>
+                                <span id="product-box__price">Price: 400$</span>
+                                <div class="overlay-item">
+                                    <div class="btn-addtocart">
+                                        <button class="add-cart cart24">Add to cart</button>
+                                    </div>
+                                    <div class="detail">
+                                        <a href="./product-3.7.html"><button>More detail</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="the-type-product-4" class="the-type-product">
+                        <div class="products">
+                            <div  class="the-type-product__name">
+                                <h4>Flower For Decoration</h4>
+                            </div>
+                            <div class="product-box">
+                                <a href="./product-4.html"><div><img src="./asset/img/item-decor-1.jpg" alt=""></div></a>
+                                <span class="product-box__name" id="product-box__name">Flower 1</span>
+                                <span id="product-box__price">Price: 400$</span>
+                                <div class="overlay-item">
+                                    <div class="btn-addtocart">
+                                        <button class="add-cart cart25">Add to cart</button>
+                                    </div>
+                                    <div class="detail">
+                                        <a href="./product-4.html"><button>More detail</button></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-box">
+                                <a href="./product-4.1.html"><div><img src="./asset/img/item-decor-2.jpg" alt=""></div></a>
+                                <span class="product-box__name" id="product-box__name">Flower 2</span>
+                                <span id="product-box__price">Price: 600$</span>
+                                <div class="overlay-item">
+                                    <div class="btn-addtocart">
+                                        <button class="add-cart cart26">Add to cart</button>
+                                    </div>
+                                    <div class="detail">
+                                        <a href="./product-4.1.html"><button>More detail</button></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-box">
+                                <a href="./product-4.2.html"><div><img src="./asset/img/item-decor-3.jpg" alt=""></div></a>
+                                <span class="product-box__name" id="product-box__name">Flower 3</span>
+                                <span id="product-box__price">Price: 750$</span>
+                                <div class="overlay-item">
+                                    <div class="btn-addtocart">
+                                        <button class="add-cart cart27">Add to cart</button>
+                                    </div>
+                                    <div class="detail">
+                                        <a href="./product-4.2.html"><button>More detail</button></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-box">
+                                <a href="./product-4.3.html"><div><img src="./asset/img/item-decor-4.jpg" alt=""></div></a>
+                                <span class="product-box__name" id="product-box__name">Flower 4</span>
+                                <span id="product-box__price">Price: 350$</span>
+                                <div class="overlay-item">
+                                    <div class="btn-addtocart">
+                                        <button class="add-cart cart28">Add to cart</button>
+                                    </div>
+                                    <div class="detail">
+                                        <a href="./product-4.3.html"><button>More detail</button></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-box">
+                                <a href="./product-4.4.html"><div><img src="./asset/img/item-decor-5.jpg" alt=""></div></a>
+                                <span class="product-box__name" id="product-box__name">Flower 5</span>
+                                <span id="product-box__price">Price: 500$</span>
+                                <div class="overlay-item">
+                                    <div class="btn-addtocart">
+                                        <button class="add-cart cart29">Add to cart</button>
+                                    </div>
+                                    <div class="detail">
+                                        <a href="./product-4.4.html"><button>More detail</button></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-box">
+                                <a href="./product-4.5.html"><div><img src="./asset/img/item-decor-6.jpg" alt=""></div></a>
+                                <span class="product-box__name" id="product-box__name">Flower 6</span>
+                                <span id="product-box__price">Price: 650$</span>
+                                <div class="overlay-item">
+                                    <div class="btn-addtocart">
+                                        <button class="add-cart cart30">Add to cart</button>
+                                    </div>
+                                    <div class="detail">
+                                        <a href="./product-4.5.html"><button>More detail</button></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-box">
+                                <a href="./product-4.6.html"><div><img src="./asset/img/item-decor-7.jpg" alt=""></div></a>
+                                <span class="product-box__name" id="product-box__name">Flower 7</span>
+                                <span id="product-box__price">Price: 810$</span>
+                                <div class="overlay-item">
+                                    <div class="btn-addtocart">
+                                        <button class="add-cart cart31">Add to cart</button>
+                                    </div>
+                                    <div class="detail">
+                                        <a href="./product-4.6.html"><button>More detail</button></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-box">
+                                <a href="./product-4.7.html"><div><img src="./asset/img/item-decor-8.jpg" alt=""></div></a>
+                                <span class="product-box__name" id="product-box__name">Flower 8</span>
+                                <span id="product-box__price">Price: 400$</span>
+                                <div class="overlay-item">
+                                    <div class="btn-addtocart">
+                                        <button class="add-cart cart32">Add to cart</button>
+                                    </div>
+                                    <div class="detail">
+                                        <a href="./product-4.7.html"><button>More detail</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content__box-1">
+                <div class="footer-content__block">
+                    <h4 class="title-block">Store & Pick Up Address</h4>
+                    <div class="block-content">
+                        <table class="table-content">
+                            <tr>
+                                <td><i class="fa-solid fa-house"></i></td>
+                                <td>Servicing all of Can Tho City since 2023</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-phone"></i></td>
+                                <td>01234567888</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-envelope"></i></td>
+                                <td>csupport@sevenstudio.com</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-earth-americas"></i></td>
+                                <td>https://www.sevenstudio.com/</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content__box-2">
+                <div class="footer-content__block">
+                    <h4 class="title-block">Connect With Us</h4>
+                    <div class="connected">
+                        <ul class="list-us">
+                            <li><a href="./aboutus.html">About us</a></li>
+                            <li>Terms & Conditions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content__box-3">
+                <div class="footer-content__block">
+                    <h4 class="title-block">Working Hours</h4>
+                    <div class="work-timming">
+                        <table class="work-timming__table">
+                            <tbody>
+                                <tr>
+                                    <td>Monday </td>
+                                    <td> : </td>
+                                    <td style="padding-left: 3px">08:00 AM - 05:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Tuesday </td>
+                                    <td> : </td>
+                                    <td style="padding-left: 3px">08:00 AM - 05:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Wednesday </td>
+                                    <td> : </td>
+                                    <td style="padding-left: 3px">08:00 AM - 05:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Thursday </td>
+                                    <td> : </td>
+                                    <td style="padding-left: 3px">08:00 AM - 05:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Friday </td>
+                                    <td> : </td>
+                                    <td style="padding-left: 3px">08:00 AM - 05:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday </td>
+                                    <td> : </td>
+                                    <td style="padding-left: 3px">08:00 AM - 05:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Sunday </td>
+                                    <td> : </td>
+                                    <td style="padding-left: 3px">08:00 AM - 02:00 PM</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="upping">
+            <a href="#"><i class="fa-solid fa-circle-chevron-up"></i></a>
+        </div>
+    </footer>
+
+    <script src="./asset/js/barscript.js"></script>
+    <script src="./asset/js/cart.js"></script>
+</body>
+</html>

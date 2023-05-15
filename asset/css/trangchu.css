@@ -1,0 +1,406 @@
+/* Người viết: 
+    1.Kim Khánh Đăng-B2113306
+    2.Phạm Trí Đạt-B2103421
+Tham khảo: Youtube, w3school.com  */
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+.main .background-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.main .background-main img{
+    /* background: rgb(0, 0, 0,  0.5) url(/study/web_begin/Project_Web_Selling_Flowers/asset/img/background-5.jpg) no-repeat; */
+    /* background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    min-height: 90vh;*/
+    height: fit-content;
+    width: 100%; 
+    opacity: 0.78;
+}
+
+.main .background-main .content{
+    /* color: rgb(250, 224, 189); */
+    font-size: 50px;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+                1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 3;
+}
+
+.main .banner {
+    height: fit-content;
+    padding: 30px 0px;
+    font-size: 12px;
+    /* align-content: center; */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* align-content: center; */
+    background-color: bisque;
+}
+
+.main .banner .banner__box{
+    width: 360px;
+    height: 110px;
+    /* background: antiquewhite; */
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.banner .banner__box .banner__box-icon{
+    background-color: #000;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 118px;
+}
+
+
+.banner .banner__box .banner__box-icon img{
+    width: 60px;
+    height: 60px;
+}
+
+
+.banner .banner__box .banner__box-icon h5{
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 25px;
+    text-align: center;
+}
+
+/* .banner .banner__box .banner__box-icon p{
+    
+} */
+
+
+
+
+.trendy-flower h4{
+    font-size: 28px;
+    background-color: rgb(43, 38, 38);
+    color: antiquewhite;
+    padding: 10px 30px 10px 30px; 
+    margin-top: 40px;
+    border-radius: 30px;
+}
+
+.trendy-flower .trendy-flower__box {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center; 
+    flex-wrap: wrap;
+}
+
+.trendy-flower__box .trendy-flower__box-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+    margin: 50px 30px 40px 30px;
+    /* padding: 30px 0 0 0; */
+    height: 450px;
+    width: 275px;
+    transition: .6s;
+}
+
+.trendy-flower__box .trendy-flower__box-item:hover{
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.trendy-flower__box-item img{
+    height: 300px;
+    width: 225px;
+    display: block;
+    border-radius: 8px;
+}
+
+.trendy-flower__box-item .box-item__name{
+    padding: 20px 0 0 0;
+}
+
+.trendy-flower .btn-store{
+    width: 140px;
+    height: 60px;
+    background: transparent;
+    color: rgb(7, 7, 7);
+    border: 2px solid rgb(0, 0, 0);
+    outline: none;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500px;
+    margin-top: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.3s ease 0s;
+}
+
+.trendy-flower .btn-store:hover{
+    background-color: rgb(7, 7, 7);
+    color: antiquewhite;
+    transform: translateY(-10px);
+}
+
+.main .quickview{
+    height: fit-content;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* background: rgb(205, 178, 143); */
+    background: rgb(250, 224, 189);;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.main .quickview .quickview-content{
+    width: 500px;
+}
+
+.quickview-content img{
+    height: 200px;
+    width: 300px;
+}
+
+.quickview-content .btn-quickview{
+    width: 120px;
+    height: 50px;
+    background: transparent;
+    color: rgb(7, 7, 7);
+    border: 2px solid rgb(0, 0, 0);
+    outline: none;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500px;
+    margin-top: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.3s ease 0s;
+}
+
+.quickview-content .btn-quickview:hover{
+    background-color: rgb(7, 7, 7);
+    color: antiquewhite;
+    transform: translateY(-10px);
+}
+
+.main .newsletter{
+    height: 400px;
+    margin-top: 5px;
+    background: antiquewhite;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.newsletter-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter-content h2{
+    font-size: 50px;
+    padding: 10px;
+}
+
+.newsletter-content p{
+    font-size: 30px;
+    padding: 10px;
+}
+
+.newsletter-content input{
+    width: 450px;
+    height: 30px;
+    background: antiquewhite;
+    color: rgb(7, 7, 7);
+    outline: none;
+    border: 3px solid white;
+}
+
+.newsletter-content button{
+    width: 120px;
+    background: transparent;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 10px;
+}
+.main .trendy-flower {
+    background: antiquewhite;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.newsletter-content button:hover{
+    background-color: rgb(7, 7, 7);  
+    color: antiquewhite;
+}
+
+@media (max-width: 900px) {
+
+    .main .background-main {
+        display: block;
+        /* margin-top: 80px; */
+        width: 100%;
+        height: fit-content;
+        margin-top: 80px;
+    }
+
+
+    .main .background-main img {
+        /* background: rgb(0, 0, 0, 0.5) url(/study/web_begin/Project_Web_Selling_Flowers/asset/img/background-5.jpg) no-repeat; */
+        height: fit-content;
+        width: 100%;
+        margin-top: 19px;
+        opacity: 0.78;
+    }
+    .main .container .background-main {
+        font-size: 20px;
+        display: flex;
+    }
+    .main .background-main .content {
+        font-size: 30px;
+    }
+    .main .banner {
+        height: fit-content;
+        padding: 30px 0px;
+    }
+    .main .banner {
+        height: fit-content;
+        padding: 30px 0px;
+        font-size: 12px;
+        /* align-content: center; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+    }
+    .main .banner .banner__box {
+        width: 360px;
+        height: 110px;
+        /* background: antiquewhite; */
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        /* align-content: center; */
+    }
+    .main .banner .banner__box p{
+        font-size: 9.2px;
+    }
+    .main .trendy-flower{
+        height: fit-content;
+        padding-bottom: 20px;
+    }
+    .main .quickview{
+        flex-direction: column-reverse;
+
+    }
+    img {
+        border-style: none;
+        height: fit-content;
+        width: 100%;
+    }
+    .main .quickview .quickview-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    .main .newsletter {
+        height: fit-content;
+        margin: 7px 0px;
+        padding-bottom: 10px;
+    }
+    .newsletter-content {
+        align-items: center;
+        width: 100%;
+        font-size: 12px;
+    }
+    .newsletter-content input{
+        width: 97%;
+    }
+    .newsletter-content p {
+        font-size: 15px;
+        padding: 10px;
+    }
+    .newsletter-content h2 {
+        font-size: 30px;
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 685px){
+    .main .background-main .content {
+        font-size: 25px;
+    }
+
+    .banner .banner__box .banner__box-icon img{
+        width: 30px;
+        height: 30px;
+    }
+    .banner .banner__box .banner__box-icon {
+        background-color: rgb(0, 0, 0);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 118px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    .trendy-flower__box .trendy-flower__box-item {
+        height: fit-content;
+        width: fit-content;
+        padding: 2vh 2vw;
+        font-size: 3vw;
+    }
+    .trendy-flower__box-item img{
+        height: fit-content;
+        width: 30vw;
+    }
+    .trendy-flower__box-item .box-item__name{
+        padding: 10px;
+    }
+}

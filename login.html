@@ -1,0 +1,142 @@
+<!-- 
+Người viết: Kim Khánh Đăng-B2113306
+Tham khảo: Youtube, w3school.com 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/all.css"> -->
+    <link rel="icon" href="./asset/img/favicon.png">
+    <link rel="stylesheet" href="./asset/css/reset.css">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/login.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="./trangchu.html"> <img src="./asset/img/logo.png" alt=""></a>
+            </div>
+            <div class="out-login">
+                <a href="./trangchu.html"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+        </div>
+    </header>
+    
+    <main class="main">
+        <div class="wrapper">
+            <div class="form-box login">
+                <h2>Log in</h2>
+                <form action="./trangchu.html">
+                    <div class="input-box">
+                        <!-- <span class="icon"><i class="fa-solid fa-envelope"></i></span> -->
+                        <label class="label-username" for="">Username</label>
+                        <input type="text" id="user-input">
+                        <span class="icon" id="user-check"><i class="fas fa-check-circle"></i></span>
+                        <span class="icon" id="user-exclamation"><i class="fas fa-exclamation-circle"></i></span>
+                    </div>
+                    <div class="input-box">
+                        <!-- <span class="icon"><i class="fa-solid fa-lock"></i></span> -->
+                        <label class="label-pwd"for="">Password</label> 
+                        <input type="password" id="password-input">
+                        <!-- <span class="toggle-password" onclick="togglePasswordVisibility()"><i class="fa-solid fa-eye"></i></span> -->
+                        <span class="icon" id="password-check"><i class="fas fa-check-circle"></i></span>
+                        <span class="icon" id="password-exclamation"><i class="fas fa-exclamation-circle"></i></span>
+                    </div>
+                    <div class="remember-forgot">
+                        <label for=""><input type="checkbox">Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                        <!-- <i class="fas fa-exclamation-circle"></i> -->
+                    </div>
+                    <button type="submit" class="btn">Login</i></button>
+                    <div class="login-register">
+                        <p>You don't have an account?<a class="login-link" href="#">Register</a></p>
+                    </div>
+                    <a href="">
+                        <div class="login-with">
+                            <i class="fa-brands fa-facebook"></i>
+                            Login with Facebook
+                        </div>
+                    </a>
+                    <div class="login-with">
+                        <i class="fa-brands fa-google"></i>
+                        Login with Google
+                    </div>
+                    <div class="login-with">
+                        <i class="fa-brands fa-apple"></i>
+                        Login with Apple ID
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-box register">
+                <h2>Registration</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <!-- <span class="icon"><i class="fa-solid fa-envelope"></i></span> -->
+                        <label class="label-username" for="">Username</label>
+                        <input type="text" id="user-input">
+                        <span class="icon" id="user-check"><i class="fas fa-check-circle"></i></span>
+                        <span class="icon" id="user-exclamation"><i class="fas fa-exclamation-circle"></i></span>
+                    </div>
+                    <div class="input-box">
+                        <!-- <span class="icon"><i class="fa-solid fa-envelope"></i></span> -->
+                        <label class="label-email" for="">Email</label>
+                        <input type="email" id="email-input">
+                        <span class="icon" id="email-check"><i class="fas fa-check-circle"></i></span>
+                        <span class="icon" id="email-exclamation"><i class="fas fa-exclamation-circle"></i></span>
+                    </div>
+                    <div class="input-box">
+                        <!-- <span class="icon"><i class="fa-solid fa-lock"></i></span> -->
+                        <label class="label-pwd"for="">Password</label> 
+                        <input type="password" id="password-input">
+                        <!-- <span class="toggle-password" onclick="togglePasswordVisibility()"><i class="fa-solid fa-eye"></i></span> -->
+                        <span class="icon" id="password-check"><i class="fas fa-check-circle"></i></span>
+                        <span class="icon" id="password-exclamation"><i class="fas fa-exclamation-circle"></i></span>
+                    </div>
+                    <div class="input-box">
+                        <!-- <span class="icon"><i class="fa-solid fa-lock"></i></span> -->
+                        <label class="label-pwd2"for="">Confirm Password</label> 
+                        <input type="password" id="password2-input">
+                        <!-- <span class="toggle-password" onclick="togglePasswordVisibility()"><i class="fa-solid fa-eye"></i></span> -->
+                        <span class="icon" id="password-check"><i class="fas fa-check-circle"></i></span>
+                        <span class="icon" id="password-exclamation"><i class="fas fa-exclamation-circle"></i></span>
+                    </div>
+                    <div class="remember-forgot">
+                        <label for="">
+                            <input type="checkbox">
+                            I agree to the term & conditions
+                        </label>
+                    </div>
+                    <button type="submit" class="btn">Register</i></button>
+                    <div class="login-register">
+                        <p>Already have an account?<a class="register-link" href="#">Login</a></p>
+                    </div>
+                </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="term-footer">
+            © 1999 - 2023
+            <a href="./trangchu.html">sevensgarden</a>
+            All rights reserved.
+            <a href="">Cookie policy</a>
+            , 
+            <a href="">Privacy</a>
+            and
+            <a href="">Terms.</a>
+        </div>
+    </footer>
+
+    <script src="./asset/js/login.js"></script>
+</body>
+</html>

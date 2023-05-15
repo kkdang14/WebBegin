@@ -1,0 +1,82 @@
+<!-- 
+Người viết: Kim Khánh Đăng-B2113306
+Tham khảo: Youtube, w3school.com 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Cart</title>
+    <link rel="icon" href="./asset/img/favicon.png">
+    <link rel="stylesheet" href="./asset/css/reset.css">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/cart.css">
+    <link rel="stylesheet" href="./asset/css/header-footer.css">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <!-- <i class="fa-duotone fa-house-tree"></i> -->
+                    <a href="./trangchu.html"><img src="./asset/img/logo.png" alt=""></a>
+                </div>
+                <div class="header-bars">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="header-nav">
+                    <div class="header-nav__list">
+                        <a href="./trangchu.html" class="header-nav__list-item">Home</a>
+                        <a href="./cuahang.html" class="header-nav__list-item">Store</a>
+                        <a href="./aboutus.html" class="header-nav__list-item">About Us</a>
+                        <a href="" class="header-nav__list-item">Contact</a>
+                        <a href="./login.html" class="header-nav__list-item"><button type="submit" formtarget="_blank" class="btn-login">Login|Register</button></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="store-tool">
+                <div class="store-tool__content">
+                    <div class="icon-contact">
+                        <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a target="_blank" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Searching in here...">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="cart-icon">
+                        <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <div class="count-item" id="count-item">(<span>0</span>)</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="products-container">
+                <div class="product-header">
+                    <h5 class="product-title">PRODUCT</h5>
+                    <h5 class="price">PRICE</h5>
+                    <h5 class="quantity">QUANTITY</h5>
+                    <h5 class="total">TOTAL</h5>
+                </div>
+                <div class="products-cart">
+                
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./asset/js/barscript.js"></script>
+    <script src="./asset/js/cart.js"></script>
+</body>
+</html>

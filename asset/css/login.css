@@ -1,0 +1,316 @@
+/* 
+Người viết: Kim Khánh Đăng-B2113306
+Tham khảo: Youtube, w3school.com  
+*/
+
+body {
+    /* background: antiquewhite; */
+    background: rgb(0, 0, 0, 0.1) url(/asset/img/background-5.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* margin-top: 80px; */
+    z-index: 9;
+    opacity: 0.8;
+}
+
+.header {
+    padding: 10px 30px;
+    width: 100%;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    border-bottom: 4px solid antiquewhite;
+    padding-bottom: 10px;
+
+}
+
+.container .logo img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.container .out-login i {
+    color: antiquewhite;
+    font-size: 3rem;
+}
+
+
+.wrapper{
+    background: rgb(250, 224, 189, 0.8);
+    backdrop-filter: blur(5px);
+    width: 400px;
+    height: 625px;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgb(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    /* flex-direction: column; */
+    /* transform: height .2s ease; */
+}
+
+/* .wrapper.active{
+    height: 520px;
+} */
+
+.wrapper .form-box.login{
+    transition: transform .5s ease;
+    transform: translateY(0);
+}
+
+.wrapper.active .form-box.login{
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.wrapper .form-box.register{
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.wrapper.active .form-box.register{
+    transition: transform .5s ease;
+    transform: translateX(0);
+}
+
+.form-box {
+    width: 100%;
+    padding: 30px;
+}
+
+.form-box h2 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid black;
+    margin: 30px 0;
+}
+
+.input-box label {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    font-size: 18px;
+    font-weight: 700;
+    pointer-events: none;
+    transition: .5s;
+    /* color: rgb(250, 235, 215) */
+}
+
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.icon {
+    display: none;
+}
+
+.email-icon .fa-check-circle,
+.password-icon .fa-check-circle {
+    color: green;
+}
+
+.email-icon .fa-exclamation-circle,
+.password-icon .fa-exclamation-circle {
+    color: red;
+}
+
+
+.remember-forgot {
+    font-size: 15px;
+    font-weight: 500;
+    margin: -15px 0 15px 0;
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+
+}
+
+.remember-forgot label input {
+    accent-color: black;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #000;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    margin-top: 20px;
+    background: black;
+    color: antiquewhite;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.login-register {
+    font-size: 15px;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px 0;
+}
+
+.login-register p a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-register p a:hover {
+    text-decoration: underline;
+}
+
+.login-with {
+    width: 100%;
+    height: 45px;
+    margin-top: 10px;
+    background: black;
+    color: antiquewhite;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.login-with i {
+    font-size: 20px;
+    padding: 15px;
+}
+
+/* .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main .login-area{
+    background: rgb(255, 255, 255,  0.5);
+    backdrop-filter: blur(5px);
+    width: 420px;
+    height: 500px;
+    margin-top: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-area h2{
+    margin-top: 50px;
+}
+
+.login-area .user-name,
+.login-area .pass-word{
+    margin-top: 40px;
+}
+
+.login-area .user-name input,
+.login-area .pass-word input{
+    width: 300px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 3px solid black;
+    padding: 5px;
+}
+
+.login-area .submit-btn button{
+    margin-top: 80px;
+    width: 200px;
+    height: 50;
+    background: transparent;
+    color: rgb(7, 7, 7);
+    border: 2px solid rgb(0, 0, 0);
+    outline: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.login-area .recommand-signup{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.login-area .recommand-signup a{
+    text-decoration: none;
+    color: antiquewhite
+}
+
+.login-area .recommand-signup a:hover{
+    text-decoration: underline;
+}
+
+
+.login-area .submit-btn button:hover{
+    background: rgb(7, 7, 7);
+    color: antiquewhite;
+}*/
+
+.footer .term-footer {
+    width: 100%;
+    margin-top: 20px;
+    color: antiquewhite;
+}
+
+.footer .term-footer a {
+    color: antiquewhite;
+}

@@ -1,0 +1,282 @@
+/* Người viết: 
+    1.Kim Khánh Đăng-B2113306
+    2.Phạm Trí Đạt-B2103421
+Tham khảo: Youtube, w3school.com  */
+
+
+.main .container .store-tool{
+    width: 100%;
+    margin-top: 105px;
+    background-color: antiquewhite;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.main .container .store-tool .store-tool__content{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* border-top: 2px solid black ; */
+    /* display: none; */
+}
+
+.main .container .store-tool .icon-contact a i{
+    font-size: 28px;
+    padding-left: 20px;
+    color: black;
+}
+
+.main .container .store-tool .icon-contact a i:hover{
+    color: rgb(196, 149, 87);
+}
+
+.main .container .store-tool .search{ 
+    font-size: 20px;
+    padding: 10px;
+    margin-right: 20px;
+    border: 2px solid black;
+}
+
+.main .container .store-tool .search input{
+    width: 32vw;
+    height: 30px;
+    font-size: 16px;
+    padding-left: 5px;
+    outline: none;
+    /* border: 2px solid black; */
+    border: none;
+    background-color: rgb(250, 224, 189);
+}
+
+.main .container .store-tool .search::placeholder{
+    font-size: 16px;
+}
+.main .container .store-tool .cart-icon{
+    display: flex;
+    margin-right: 20px;
+    /* border: 2px solid black; */
+}
+
+.main .container .store-tool .cart-icon a i{
+    color: black;
+    font-size: 1.5rem;
+    padding: 10px 0 10px 10px;
+}
+
+.main .container .store-tool .cart-icon i:hover{
+    color: rgb(196, 149, 87);
+}
+
+.main .container .store-tool .cart-icon .count-item{
+    font-size: 16px;
+    padding: 10px 10px 0 0;
+}
+
+
+.main .products-container{
+    max-width: 650px;
+    height: 250px;
+    position: relative;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.products-container .products-cart i{
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.products-container .products-cart .product{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid lightgrey;
+    padding: 1px;
+}
+
+.products-container .products-cart .product img{
+    width: 80px;
+    height: 120px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.basketTotalContainer{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.basketTotalTitle{
+    width: 30%;
+}
+
+.basketTotal{
+    width: 10%;
+}
+
+.products-container .products-cart .product .name{
+    margin-right: 70px;
+}
+
+.products-container .products-cart .product .quantity i{
+    font-size: 20px;
+}
+.products-container .inform{
+    position: absolute;
+    top: 125px;
+    right: 275px;
+}
+
+.product-header{
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgrey;
+    margin: 0 auto;
+}
+
+.product-title{
+    width: 45%;
+}
+
+.price{
+    width: 15%;
+    /* border-bottom: 4px solid lightgrey; */
+    display: flex;
+    align-items: center;
+}
+
+.quantity{
+    width: 30%;
+    /* border-bottom: 4px solid lightgrey; */
+    display: flex;
+    align-items: center;
+}
+
+.total{
+    width: 10%;
+    /* border-bottom: 1px solid lightgrey; */
+    display: flex;
+    align-items: center;
+}
+
+.products-cart{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px 10px;
+}
+@media (max-width: 600px){
+    .main .container .store-tool .icon-contact a i{
+        font-size: 24px;
+        padding-left: 8px;
+        color: black;
+    }
+    .main .container .store-tool .search {
+        font-size: 19px;
+        padding: 10px;
+        margin-right: 0px;
+        border: 2px solid black;
+    }
+    .main .container .store-tool .cart-icon a i {
+        color: black;
+        font-size: 20px;
+        padding: 10px 0 10px 10px;
+    }
+    .main .container .store-tool .cart-icon a i {
+        color: black;
+        font-size: 20px;
+        padding: 10px 0 10px 0px;
+    }
+    .main .container .store-tool .cart-icon .count-item {
+        font-size: 16px;
+        padding: 10px 0px 0 0;
+    }
+    .main .container .store-tool .search input{
+        font-size: 13px;
+    }
+    .product-title {
+        width: 38%;
+    }.price {
+        width: 21%;
+        /* border-bottom: 4px solid lightgrey; */
+        display: flex;
+        align-items: center;
+    }
+    .products-container .products-cart .product .name {
+        margin-right: 33px;
+    }
+    @media (max-width: 600px){
+        .products-container .products-cart .product .name {
+            margin-right: 10px;
+        }
+    }
+    @media (max-width: 400px){
+        .products-container .products-cart .product .name {
+            margin-right: 10px;
+            font-size: 10px;
+        }
+        .products-container .products-cart .product img {
+            width: 54px;
+            height: fit-content;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        
+        .price{
+            font-size: 10px;
+        }.quantity {
+            width: 25%;
+            /* border-bottom: 4px solid lightgrey; */
+            display: flex;
+            font-size: 10px;
+            align-items: center;
+        }
+        .total{
+            font-size: 10px;
+        }
+        .product-title{
+            font-size: 10px;
+        }
+        .cart-total{
+            font-size: 10px;
+        }
+        .basketTotalTitle{
+            font-size: 10px;
+        }
+        .basketTotal{
+            font-size: 10px;
+        }
+        .main .container .store-tool .icon-contact a i{
+            font-size: 15px;
+        }
+        .main .container .store-tool .search{
+            font-size: 15px;
+            padding: 7px;
+        }
+        .main .container .store-tool .cart-icon a i{
+            font-size: 15px;
+        }
+        .main .container .store-tool .search input{
+            font-size: 9px;
+        }
+        .main .container .store-tool .cart-icon .count-item{
+            font-size: 10px;
+        }
+        .products-container .products-cart .product .quantity i {
+            font-size: 10px;
+        }
+        .products-container .products-cart i {
+            font-size: 10px;
+        }
+    }
+}

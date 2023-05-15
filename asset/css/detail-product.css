@@ -1,0 +1,229 @@
+/* Người viết: 
+    1.Kim Khánh Đăng-B2113306
+    2.Phạm Trí Đạt-B2103421
+Tham khảo: Youtube, w3school.com  */
+
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .main .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main .cashier-area {
+        margin-top: 110px;
+        background: antiquewhite;
+        width: 80vw;
+        padding: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main .cashier-area .img-product {
+        background: white;
+        width: 300px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+    }
+
+    .main .cashier-area .img-product img {
+        width: 250px;
+        height: 350px;
+    }
+
+    .main .cashier-area .info-product {
+        /* background: white; */
+        width: 720px;
+        height: 400px;
+        padding: 30px;
+    }
+
+    .main .cashier-area .info-product h2 {
+        font-size: 30px;
+    }
+
+    .main .cashier-area .info-product h4 {
+        font-size: 25px;
+        padding-top: 25px;
+    }
+
+    .main .cashier-area .info-product .amount {
+        padding-top: 30px;
+    }
+
+    .main .cashier-area .info-product .amount input {
+        width: 50px;
+        height: 30px;
+        background: transparent;
+        padding-left: 5px;
+        outline: none;
+        border-radius: 5px;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        opacity: 1;
+    }
+
+    .main .cashier-area .info-product .discription {
+        padding-top: 20px;
+    }
+
+    .main .cashier-area .info-product .button {
+        display: flex;
+        padding-top: 40px;
+
+    }
+
+    .cashier-area .info-product .button .addcart-btn button,
+    .cashier-area .info-product .button .buy-btn button {
+        background: transparent;
+        width: 120px;
+        height: 50px;
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: 600px;
+    }
+
+    .cashier-area .info-product .button .addcart-btn button:hover,
+    .cashier-area .info-product .button .buy-btn button:hover {
+        background: black;
+        color: rgb(250, 224, 189);
+    }
+
+    .cashier-area .info-product .button .buy-btn {
+        padding-left: 20px;
+    }
+
+    .main .same-product {
+        background: antiquewhite;
+        width: 80%;
+        height: 350px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .slides {
+        display: flex;
+        justify-content: center;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .slides img {
+        width: 200px;
+        padding: 10px;
+        object-fit: cover;
+    }
+
+    .carousel:hover .slides {
+        transition: none;
+    }
+
+    /* previous and next button styles */
+
+    .prev,
+    .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .prev {
+        left: 0;
+    }
+
+    .next {
+        right: 0;
+    }
+
+    /* disabled state for previous and next buttons */
+
+    .prev.disabled,
+    .next.disabled {
+        opacity: 0.5;
+        cursor: default;
+    }
+
+    @media (max-width: 1000px) {
+        .main .container .cashier-area {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main .container .cashier-area .img-product {
+            height: fit-content;
+            width: fit-content;
+            background: white;
+            display: flex;
+            border-radius: 8px;
+            position: relative;
+            justify-content: center;
+            padding: 8px;
+
+        }
+
+        .main .cashier-area .img-product img {
+            width: 190px;
+            height: 257px;
+        }
+
+
+        .main .cashier-area .info-product {
+            /* background: white; */
+            width: fit-content;
+            height: fit-content;
+            padding: 30px 0px;
+        }
+
+        .main .same-product {
+            background: antiquewhite;
+            width: 100%;
+            height: 100%;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0px;
+        }
+
+        .slides {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            /* flex-basis: fit-content; */
+            /* transition: transform 0.5s ease-in-out; */
+        }
+
+        .main .same-product .carousel .slides img {
+            width: 125px;
+            padding: 10px;
+            object-fit: cover;
+        }
+
+    }

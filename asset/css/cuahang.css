@@ -1,0 +1,462 @@
+/* 
+Người viết: 
+    1.Kim Khánh Đăng-B2113306
+    2.Phạm Trí Đạt-B2103421
+    3.Lâm Hoàng Em-B2003890
+Tham khảo: Youtube, w3school.com  
+*/
+
+
+html{
+    scroll-behavior: smooth;
+    height: fit-content;
+}
+
+.main .container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .container .store-tool{
+    width: 100%;
+    margin-top: 105px;
+    background-color: antiquewhite;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.main .container .store-tool .store-tool__content{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* border-top: 2px solid black ; */
+    /* display: none; */
+}
+
+.main .container .store-tool .icon-contact a i{
+    font-size: 28px;
+    padding-left: 20px;
+    color: black;
+}
+
+.main .container .store-tool .icon-contact a i:hover{
+    color: rgb(196, 149, 87);
+}
+
+.main .container .store-tool .search{ 
+    font-size: 20px;
+    padding: 10px;
+    margin-right: 20px;
+    border: 2px solid black;
+}
+
+.main .container .store-tool .search input{
+    width: 32vw;
+    height: 30px;
+    font-size: 16px;
+    padding-left: 5px;
+    outline: none;
+    /* border: 2px solid black; */
+    border: none;
+    background-color: rgb(250, 224, 189);
+}
+
+.main .container .store-tool .search::placeholder{
+    font-size: 16px;
+}
+.main .container .store-tool .cart-icon{
+    display: flex;
+    margin-right: 20px;
+    /* border: 2px solid black; */
+}
+
+.main .container .store-tool .cart-icon a i{
+    font-size: 1.5rem;
+    padding: 10px 0 10px 10px;
+    color: #000;
+}
+
+.main .container .store-tool .cart-icon i:hover{
+    color: rgb(196, 149, 87);
+}
+
+.main .container .store-tool .cart-icon .count-item{
+    font-size: 16px;
+    padding: 10px 10px 0 0;
+}
+
+.container .banner-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* background: rgb(205, 178, 143); */
+    background: rgb(250, 235, 215);
+    margin-top: 10px;
+}
+
+.container .banner-main .banner-main__content img{
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    /* background: url(/study/web_begin/Project_Web_Selling_Flowers/asset/img/Banner-store-2.png) no-repeat; */
+    /* background-position: center;
+    background-size: cover; */
+}
+.container .banner-main .banner-main__content{
+    display: flex;
+    justify-content: center;
+}
+
+.container .product-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: static;
+    height: fit-content;
+}
+
+.container .product-area .kind-products{
+    width: 80%;
+    margin-top: 10px;
+    height: fit-content;
+    background: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4vh 0;
+}
+
+
+.kind-products .typename-products{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+
+.kind-products .typename-products .typename-products__child{
+    width: fit-content;
+    height: fit-content;
+    max-width: 200px;
+    max-height: 200px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 2px black;
+}
+
+.kind-products .typename-products .typename-products__child .content h4{
+    font-size: 20px;
+}
+
+.typename-products .typename-products__child img{
+    width: 16vw;
+    height: 16vw;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 15px;
+}
+
+.typename-products .typename-products__child .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;   
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.4);
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.typename-products__child .overlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.typename-products__child .overlay:hover > *{
+    transform: translateY(0);
+}
+
+.typename-products .typename-products__child .overlay:hover{
+    opacity: 1;
+}
+
+.typename-products__child .overlay .content{
+    font-size: 2vw;
+    font-weight: 500;
+    user-select: none;
+}
+
+
+.products-shelves{
+    height: fit-content;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.products-shelves .the-type-product {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding-top: 80px;
+    width: 100%;
+}
+
+.products-shelves .the-type-product .the-type-product__name{
+    height: 70px;
+    width: 100%;
+    background-color: rgb(250, 224, 189);
+    /* margin-top: 10px; */
+    border-radius: 8px;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.the-type-product__name h4{
+    font-size: 2.5vw;
+    font-weight: 600;
+}
+
+.products-shelves .the-type-product .products{
+    background-color: white;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 38%;
+}
+#the-type-product-1{
+    height: fit-content;
+}
+#the-type-product-2{
+    height: fit-content;
+}
+#the-type-product-3{
+    height: fit-content;
+}
+#the-type-product-5{
+    height: fit-content;
+}
+
+
+.the-type-product .products .product-box{
+    background-color: antiquewhite;
+    height: fit-content;
+    width: fit-content;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: rgb(0, 0, 0, 0.1);
+    transition: transform 0.6s;
+    margin-bottom: 20px;
+    margin-left: 2vw;
+    display: flex;
+    padding: 2vw 1vw;
+} 
+
+.the-type-product .products .product-box:hover{
+    transform: scale(1.1);
+    z-index: 1;
+    cursor: pointer;
+    background-color: rgb(250, 224, 189);
+}
+
+.products .product-box img{
+    width: 19vw;
+    height: 25vw;
+    max-width: 200px;
+    max-height: 250px;
+    border-radius: 5px;
+}
+
+.products .product-box span{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.products .product-box .overlay-item{
+    position: absolute;
+    top: 0;
+    left: 0;   
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.35);
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.product-box .overlay-item > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.product-box .overlay-item:hover > *{
+    transform: translateY(0);
+}
+
+.products .product-box .overlay-item:hover{
+    opacity: 1;
+}
+
+.product-box .overlay-item{
+
+}
+
+.product-box .overlay-item .btn-addtocart,
+.product-box .overlay-item .detail
+{
+    font-size: 20px;
+    font-weight: 500;
+    user-select: none;
+}
+
+.product-box .overlay-item .btn-addtocart button,
+.product-box .overlay-item .detail button{
+    background: transparent;
+    border: 2px solid antiquewhite;
+    margin: 10px;
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    color: antiquewhite;
+    cursor: pointer;
+}
+
+@media (max-width: 700px){
+    .products-shelves{
+        width: 100%;
+    }
+    .main .container .store-tool .icon-contact a i {
+        font-size: 4vw;
+        padding-left: 1vw;
+        color: black;
+    }
+    .main .container .store-tool .cart-icon i{
+        font-size: 4vw;
+    }
+    .main .container .store-tool .search {
+        font-size: 15px;
+        padding: 5px;
+        border: 2px solid black;
+        margin-right: 0px;
+    }
+    .main .container .store-tool .search input {
+        width: 39vw;
+        height: fit-content;
+        font-size: 3vw;
+        padding-left: 1vw;
+    }
+    .main .container .store-tool {
+        margin-top: 13.7vh;
+    }
+    .container .banner-main .banner-main__content img{
+        width: 100%;
+    }
+    .container .product-area{
+        width: 100%;
+    }
+    .container .product-area .kind-products{
+        width: 100%;
+    }
+
+    .kind-products .typename-products .typename-products__child .content h4{
+        font-size: 11px;
+    }
+
+    .products-shelves .the-type-product .products{
+        position: relative;
+        top: 38%;
+    }
+    .products-shelves .the-type-product .the-type-product__name{
+        height: 6vw;
+        width: 100%;
+        margin-bottom: 2.5vh;
+    }
+    .the-type-product__name h4 {
+        font-size: 3.5vw;
+        font-weight: 600;
+    }
+
+    .the-type-product .products .product-box {
+        height: 45vw;
+        width: 33vw;
+        margin-bottom: 10px;
+    }
+    .products .product-box img {
+        height: 40vw;
+        width: 38vw;
+    }
+    .products .product-box span{
+        font-size: 13px;
+    }
+    
+    @media (max-width: 650px){
+        .products .product-box img {
+            height: 33vw;
+            width: 28vw;
+            max-width: 400px;
+            max-height: 400px;
+        }
+        .products .product-box span {
+        font-size: 2vw;
+        }
+
+        .product-box .overlay-item .btn-addtocart,
+        .product-box .overlay-item .detail
+        {
+            font-size: 14px;
+            font-weight: 500;
+            user-select: none;
+        }
+
+        .product-box .overlay-item .btn-addtocart button,
+        .product-box .overlay-item .detail button{
+            background: transparent;
+            border: 2px solid antiquewhite;
+            margin: 10px;
+            border-radius: 10px;
+            width: 100px;
+            height: 40px;
+            color: antiquewhite;
+            cursor: pointer;
+}
+    }
+
+}
+
